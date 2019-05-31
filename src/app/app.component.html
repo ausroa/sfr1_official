@@ -1,23 +1,8 @@
-<div class="sfr1">
-  <div class="sfr1-nav-bar">
+<div class="sfr1-container">
+  <header class="navbar">
     <app-navbar></app-navbar>
-  </div>
-  <div class="sfr1-pages">
+  </header>
+  <section class="views">
     <router-outlet></router-outlet>
-  </div>
-  <section class="sfr1-homepage">
-    <div class="sfr1-homepage-container">
-      <div *ngFor="let content of sfr1HomepageContent" class="sfr1-homepage-content">
-        <img class="sfr1-homepage-image" src="{{content.url}}" alt="">
-        <div class="sfr1-homepage-text-box">
-          <p class="sfr1-homepage-text-box-text">
-            <span>Poise</span>
-            <span>Autumn/Winter</span>
-            <span>2019</span>
-          </p>
-          <a class="sfr1-homepage-text-box-button" href="#">Explore</a>
-        </div>
-      </div>
-    </div>
   </section>
 </div>

@@ -1,78 +1,17 @@
 @import "abstracts/variables";
+@import "base/animations";
 
-.sfr1 {
+.sfr1-container {
   position: relative;
+}
 
-  &-nav-bar {
-  }
+.navbar {
+  width: 100vw;
+}
 
-  &-pages {
-  }
-
-  &-homepage {
-    position: relative;
-
-    &-container {
-      display: grid;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    &-content {
-      height: $homepage-content-height;
-      position: relative;
-      width: $homepage-content-width;
-      overflow: hidden;
-    }
-
-    img {
-      max-width: 100%;
-      z-index: -1;
-      position: absolute;
-    }
-
-    &-text-box {
-      position: absolute;
-      top: 25vw;
-      left: 15vw;
-
-      &-text {
-        position: absolute;
-        font-size: 2vw;
-        line-height: 2vw;
-        color: #eeeeee;
-
-        span {
-          display: inline-block;
-
-          &:last-child {
-            margin-top: 0.5vw;
-          }
-        }
-      }
-
-      &-button {
-        position: absolute;
-        text-decoration: none;
-        color: white;
-        font-size: 1.5vw;
-        padding: 1rem 2rem 1rem 2rem;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 1vw;
-        border: none;
-        top: 7vw;
-        transition: all 0.2s ease;
-
-        &:hover {
-          transform: translateY(-0.2vw);
-          box-shadow: 0 10px 20px rgba($color-black, .5);
-        }
-
-        &:active {
-          transform: translateY(-0.1vw);
-          box-shadow: 0 5px 10px rgba($color-black, .5);
-        }
-      }
-    }
-  }
+.views {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  display: grid;
 }

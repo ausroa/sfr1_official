@@ -3,10 +3,10 @@
     <img class="sfr1-navbar-logo-image" src="assets/imgs/logo_web-01.png" alt="">
   </a>
 
-  <div class="sfr1-navbar-link navbar-collapse collapse w-100 order-3 dual-collapse2">
+  <div class="sfr1-links navbar-collapse collapse w-100 order-3 dual-collapse2">
     <ul class="navbar-nav ml-auto">
-      <li *ngFor="let link of sfr1HomepageLinks" class="nav-item sfr1-navbar-item">
-        <a class="sfr1-navbar-link-text nav-link" href="#">{{link.name | uppercase}}</a>
+      <li *ngFor="let link of sfr1HomepageLinks" class="nav-item sfr1-links-item">
+        <a class="sfr1-links-text nav-link" routerLink="{{link.router}}">{{link.name | uppercase}}</a>
       </li>
     </ul>
   </div>

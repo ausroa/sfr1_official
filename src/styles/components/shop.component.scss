@@ -1,0 +1,52 @@
+.shop-header {
+
+  &-container {
+    margin: 0 15vw 0 15vw;
+  }
+
+  &-title {
+    margin-top: 2vw;
+    font-size: 3vw;
+    animation: moveInRight 1s ease-out;
+    text-transform: uppercase;
+  }
+
+  &-divider {
+    animation: moveInLeft 1s ease-out;
+  }
+}
+
+.shop-products {
+  margin: 0 auto;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    margin: 0 0 0 27vw;
+  }
+
+  &-item {
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid white;
+    overflow: hidden;
+    animation: moveInTop 1s ease 0.5s;
+    animation-fill-mode: backwards;
+    transition: all .5s;
+
+    &:hover {
+      transform: translateY(-0.2vw);
+      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.51);
+    }
+
+    &:active {
+      transform: translateY(-0.1vw);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.51);
+    }
+
+    &-image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

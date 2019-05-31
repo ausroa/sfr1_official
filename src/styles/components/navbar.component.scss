@@ -1,3 +1,5 @@
+@import "base/animations";
+
 .sfr1-navbar {
   position: relative;
   padding: 10px;
@@ -5,20 +7,18 @@
   &-logo {
     position: absolute;
     left: 15vw;
+    animation: moveInRight 1s ease-out;
 
     &-image {
       width: 5vw;
     }
   }
+}
 
-  &-link {
-    position: relative;
-    right: 15vw;
-
-    &-text {
-      font-size: 1vw;
-    }
-  }
+.sfr1-links {
+  position: relative;
+  right: 15vw;
+  animation: moveInLeft 1s ease-out;
 
   &-item {
     margin-right: 1vw;
@@ -26,5 +26,9 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &-text {
+    font-size: 1vw;
   }
 }

@@ -1,0 +1,13 @@
+<header class="shop-header">
+  <div class="shop-header-container">
+    <h1 class="shop-header-title">Shop</h1>
+    <hr class="shop-header-divider">
+  </div>
+</header>
+<section class="shop-products">
+  <div class="shop-products-container">
+    <div *ngFor="let product of products" class="shop-products-item" (click)="selectProduct(product)">
+      <img class="shop-products-item-image" src="{{product.img}}" alt="">
+    </div>
+  </div>
+</section>
