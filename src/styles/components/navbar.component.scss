@@ -1,0 +1,30 @@
+.sfr1-navbar {
+  position: relative;
+  padding: 10px;
+
+  &-logo {
+    position: absolute;
+    left: 15vw;
+
+    &-image {
+      width: 5vw;
+    }
+  }
+
+  &-link {
+    position: relative;
+    right: 15vw;
+
+    &-text {
+      font-size: 1vw;
+    }
+  }
+
+  &-item {
+    margin-right: 1vw;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
